@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<html lang="en">
+<!-- CSS file 'style' to use with HTML file 'index.html', and 'images' folder containing file 'html-in-use.jpg',
+  made by Udacity Introduction to Programming nano-degree student Alan Lloyd 21-08-2016-->
+  <head>
+      <meta charset="UTF-8"> <!-- This line defines "character encoding"
+        This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+        You should include this line in the head of all of your webpages. -->
+      <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML -->
+      <title>About HTML</title>
+  </head>
+  <body>
+      <h1 id="part9">About HTML</h1> <!-- main header, with link from bottom of page   -->
+
+      <h3>Contents</h3><!-- list of sub-titles, and 3 boxes at bottom  -->
+        <ol>
+          <li><a href="#part1">what is HTML</a></li>
+          <li><a href="#part2">current versions</a></li>
+          <li><a href="#part3">what it consists of</a></li>
+          <li><a href="#part4">HTML uses CSS</a></li>
+          <li><a href="#part5">HTML today:</a></li>
+        </ol>
+        <ol type="i"> <!-- 3 boxes  -->
+          <li><a href="#part6">Udacity courses for all</a></li>
+          <li><a href="#part7">videos - Apollo 11</a></li>
+          <li><a href="#part8">W3C code validation</a></li>
+        </ol>
+
+      <h3 id="part1">What is HTML</h3>
+        <p>Hypertext Markup Language (HTML) is a markup language used in documents that typically contain direct links (URLs) that make up the 'world wide web'.</p>
+
+      <h3 id="part2">Current versions</h3>
+        <p>HTML Version 5 is now being used, having been recommended by the World Wide Web Consortium (W3C) in November 2014.</p>
+        <p>It was a long time coming, superseding version 4 which got W3C recommendation in 1999.</p>
+
+      <h3 id="part3">What it consists of</h3>
+
+        <p><span>HTML is a formatting language</span>, that uses <em>elements</em>, comprising of <em>tags</em>, to impose formal structure.</p>
+        <p> Tags are of different types, e.g.</p>
+          <ul>
+            <li>some tags do not apply to particular document text, and are 'void tags', with no end tag - such as <b>br</b> and <b>img</b></li>
+            <li>other elements do have end tags - e.g. <b>p, head, body, html</b> etc</li>
+            <li>'inline' elements impose their effects on text within that text structure e.g. <b>span</b>, or <b>br</b></li>
+            <li>'block' elements create an independent 'block' effect within a page e.g. <b>form</b>, <b>div</b></li>
+          </ul>
+
+      <h3 id="part4">HTML uses CSS</h3>
+        <p>HTML works in tandem with 'cascading style sheets' (CSS), to provide a more orderly way to style webpages.</p>
+        <p>An HTML file <b>links</b> to a CSS file its using, or CSS code can be directly embedded via <b>style</b> tags.</p><p>This is particularly important for maintaining styling consistency in pages of large websites. HTML currently uses CSS version 3.</p>
+
+      <h3 id="part5">HTML today</h3>
+
+        <div class="container"> <!-- contains 3 boxes  -->
+
+          <!-- text with image  -->
+        <div class="this-textblock" id="part6"> <p>HTML 5 is used on most computers today (including mobile devices) e.g. displaying comprehensive online Udacity study courses, accessible worldwide:</p> <img src="images/html-in-use.JPG" height="200" width="200" alt="my computer using HTML" />
+        </div>
+
+          <!-- text with image, with link to video I made in HTML5 page on my website  -->
+        <div class="this-textblock" id="part7"><p>HTML 5 has many advantages over version 4, including simple to use <b>audio</b> and <b>video</b> tags, which provide this Apollo 11 video<b>:</b></p><br>
+           <a href="http://alanlloyd.eu/video1.html" ><img src="http://upload.wikimedia.org/wikipedia/commons/9/9c/Aldrin_Apollo_11.jpg" title="click on Commander Aldrin for video" alt="click on Commander Aldrin for video" height="200"  width="200"></a>
+        </div>
+
+          <!--  text and image - CSS file style.css validated by w3c, allowing use of logo. -->
+        <div class="this-textblock" id="part8">
+          <p>You can learn more of the HTML 5 standard via world wide web consortium standard for html5, at <a href="https://www.w3.org/TR/html5/">w3c.org</a> </p>
+          <p>W3C even offer a <a href="https://validator.w3.org/">free validator</a> to check code quality of HTML, and CSS.</p>
+          <p> <img style="border:0;width:150px;height:46px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" ></p>
+        </div>
+
+        </div><!--end of class container-->
+        <a href="#part9">back to top</a>
+    </body>
+  </html>
